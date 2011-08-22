@@ -32,3 +32,4 @@ map <leader>n :w\|!node %<CR>
 map <leader>c :w\|!coffee %<CR>
 map <leader>v :w\|!vows --spec %<CR>
 vmap c :CoffeeCompile<CR>
+
