@@ -31,5 +31,6 @@ let mapleader = ","
 map <leader>n :w\|!node %<CR>
 map <leader>c :w\|!coffee %<CR>
 map <leader>v :w\|!vows --spec %<CR>
+map <leader>b :w\|!sh %<CR>
 vmap c :CoffeeCompile<CR>
 
