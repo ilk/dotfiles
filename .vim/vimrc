@@ -22,6 +22,11 @@ map tp :tabp<CR>
 map sh :sp<CR>
 map sv :vs<CR>
 
+"Pathogen
+call pathogen#infect()
+filetype plugin indent on
+
+"Mappings
 let mapleader = ","
 map <leader>n :w\|!node %<CR>
 map <leader>c :w\|!coffee %<CR>
