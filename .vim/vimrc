@@ -10,7 +10,7 @@ set si
 
 "Colorscheme
 syntax on
-colorscheme pablo
+colorscheme nature
 
 "Cursorline
 set cursorline
