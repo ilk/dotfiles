@@ -24,7 +24,7 @@ filetype plugin indent on
 
 "Colorscheme
 syntax on
-colorscheme redblack
+colorscheme 256-grayvim
 
 "Mappings
 let mapleader = ","
