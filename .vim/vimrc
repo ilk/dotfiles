@@ -8,10 +8,6 @@ set tabstop=4
 "Autoindent
 set si
 
-"Colorscheme
-syntax on
-colorscheme nature
-
 "Cursorline
 set cursorline
 highlight CursorLine cterm=bold
@@ -25,6 +21,10 @@ map sv :vs<CR>
 "Pathogen
 call pathogen#infect()
 filetype plugin indent on
+
+"Colorscheme
+syntax on
+colorscheme nature
 
 "Mappings
 let mapleader = ","
