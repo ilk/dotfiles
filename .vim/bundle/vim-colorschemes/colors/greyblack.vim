@@ -56,7 +56,7 @@ hi Todo           ctermbg=black guibg=black ctermfg=white guifg=white
 hi Typedef        ctermbg=black guibg=black ctermfg=white guifg=white
 hi Type           ctermbg=black guibg=black ctermfg=white guifg=white
 hi VertSplit      ctermbg=black guibg=black ctermfg=grey guifg=grey
-hi Visual         ctermbg=black guibg=black ctermfg=grey guifg=grey
-hi VisualNOS      ctermbg=white guibg=grey ctermfg=black guifg=black
+hi Visual         ctermbg=black guibg=black ctermfg=white guifg=white
+hi VisualNOS      ctermbg=black guibg=black ctermfg=white guifg=white
 hi WarningMsg     ctermbg=black guibg=black ctermfg=red guifg=red
 hi WildMenu       ctermbg=white guibg=white ctermfg=red guifg=red
