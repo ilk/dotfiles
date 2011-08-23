@@ -1,4 +1,4 @@
-install: vim ssh bashrc gitconfig
+install: vim ssh bashrc profile gitconfig
 
 vim:
 	rm -f ~/.vimrc
@@ -14,6 +14,10 @@ ssh:
 bashrc:
 	rm -f ~/.bashrc
 	cp -rp .bashrc ~/
+
+profile:
+	rm -f ~/.profile
+	cp -rp .profile ~/
 
 gitconfig:
 	rm -f ~/.gitconfig
