@@ -39,6 +39,7 @@ if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
+	alias su='sudo env PATH=$PATH HOME=$HOME su -p'
 fi
                                                                                           
 if [ -f /etc/bash_completion ]; then
