@@ -46,5 +46,12 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# autoupdate dotfiles
+if [ -d ~/dotfiles/.git ]; then
+	echo dotfiles: updating
+	cd ~/dotfiles
+	git pull &&	make -s install
+fi
+
 PATH=./.bin:$PATH
 export EDITOR=vim
