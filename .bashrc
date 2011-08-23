@@ -9,8 +9,17 @@ dotup() {
 	fi
 }
 export -f dotup
+# sudo normalizer
+sudo () {
+    if [ "$*" == "-s" ] && [ "`uname -s`" != "Darwin" ]; then
+        `which sudo` env PATH=$PATH HOME=$HOME su -p
+    else
+        `which sudo` $*
+    fi
+}
+export -f sudo
 
-## batch
+# batch
 [ -z "$PS1" ] && return
 
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
@@ -53,12 +62,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
 fi
 	
-if [ "`uname -s`" == "Darwin" ]; then
-	alias sudos="sudo -s"
-else
-	alias sudos='sudo env PATH=$PATH HOME=$HOME su -p'
-fi
-                                                                                          
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
