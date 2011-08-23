@@ -8,12 +8,13 @@ hi Comment        ctermbg=black guibg=black ctermfg=darkgrey guifg=#606060 cterm
 hi Condtional     ctermbg=black guibg=black ctermfg=white guifg=white
 hi Constant       ctermbg=black guibg=black ctermfg=grey guifg=grey
 hi Cursor         ctermbg=black guibg=white ctermfg=grey guifg=grey
+hi CursorLine     ctermbg=black guibg=black ctermfg=grey guifg=grey cterm=bold
 hi Debug          ctermbg=black guibg=black ctermfg=grey guifg=grey
 hi Define         ctermbg=black guibg=black ctermfg=white guifg=white
 hi Delimiter      ctermbg=black guibg=black ctermfg=grey guifg=white
 hi DiffAdd        ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE cterm=NONE gui=NONE
-hi DiffChange     ctermbg=white guibg=white ctermfg=darkgrey guifg=#606060
-hi DiffDelete     ctermbg=black guibg=black ctermfg=darkgrey guifg=#606060 cterm=bold
+hi DiffChange     ctermbg=white guibg=white ctermfg=darkgrey guifg=darkgrey
+hi DiffDelete     ctermbg=black guibg=black ctermfg=darkgrey guifg=darkgrey cterm=bold
 hi DiffText       ctermbg=red guibg=red ctermfg=white guifg=white
 hi Directory      ctermbg=black guibg=black ctermfg=white guifg=white
 hi Error          ctermbg=red guibg=red ctermfg=white guifg=white
@@ -28,12 +29,12 @@ hi Include        ctermbg=black guibg=black ctermfg=white guifg=white
 hi IncSearch      ctermbg=green guibg=green ctermfg=darkgrey guifg=#606060
 hi Keyword        ctermbg=black guibg=black ctermfg=white guifg=white
 hi Label          ctermbg=black guibg=black ctermfg=white guifg=white
-hi LineNr         ctermbg=black guibg=black ctermfg=darkgrey guifg=#606060 cterm=bold
+hi LineNr         ctermbg=black guibg=black ctermfg=darkgrey guifg=darkgrey cterm=bold
 hi Macro          ctermbg=black guibg=black ctermfg=grey guifg=grey
 hi ModeMsg        ctermbg=black guibg=black ctermfg=grey guifg=grey
 hi MoreMsg        ctermbg=black guibg=black ctermfg=grey guifg=grey
-hi NonText        ctermbg=black guibg=black ctermfg=darkgrey guifg=#606060 cterm=bold
-hi Number         ctermbg=black guibg=black ctermfg=darkgrey guifg=#606060 cterm=NONE gui=NONE
+hi NonText        ctermbg=black guibg=black ctermfg=darkgrey guifg=darkgrey cterm=bold
+hi Number         ctermbg=black guibg=black ctermfg=darkgrey guifg=darkgrey cterm=NONE gui=NONE
 hi Operator       ctermbg=black guibg=black ctermfg=white guifg=white
 hi PreCondit      ctermbg=black guibg=black ctermfg=white guifg=white
 hi PreProc        ctermbg=black guibg=black ctermfg=white guifg=white
