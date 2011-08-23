@@ -47,10 +47,11 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # autoupdate dotfiles
-if [ -d ~/dotfiles/.git ]; then
+if [ -d ~/dotfiles/.git ] && [ "$USER" != "root" ]; then
 	echo dotfiles: updating
 	cd ~/dotfiles
 	git pull &&	make -s install
+	cd ~/
 fi
 
 PATH=./.bin:$PATH
