@@ -1,4 +1,16 @@
-#!/usr/bin/env bash
+## functions
+# autoupdate dotfiles
+dotup() {
+	if [ -d ~/dotfiles/.git ] && [ "$USER" != "root" ]; then
+		echo dotfiles: updating
+		cd ~/dotfiles
+		git pull &&	make -s install
+		cd ~/
+	fi
+}
+export -f dotup
+
+## batch
 [ -z "$PS1" ] && return
 
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
@@ -49,14 +61,6 @@ fi
                                                                                           
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
-fi
-
-# autoupdate dotfiles
-if [ -d ~/dotfiles/.git ] && [ "$USER" != "root" ]; then
-	echo dotfiles: updating
-	cd ~/dotfiles
-	git pull &&	make -s install
-	cd ~/
 fi
 
 PATH=./.bin:$PATH
