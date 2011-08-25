@@ -1,4 +1,4 @@
-install: vim ssh bashrc profile gitconfig
+install: vim ssh bashrc colors aliases profile gitconfig
 
 vim:
 	rm -f ~/.vimrc
@@ -14,6 +14,16 @@ ssh:
 bashrc:
 	rm -f ~/.bashrc
 	cp -rp .bashrc ~/
+
+colors:
+	rm -f ~/.colors
+	cp -rp .colors ~/
+
+aliases:
+	rm -f ~/.osx_alias
+	rm -f ~/.deb_alias
+	cp -rp .osx_alias ~/
+	cp -rp .deb_alias ~/
 
 profile:
 	rm -f ~/.profile
