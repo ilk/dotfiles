@@ -1,1 +1,2 @@
 alias fcache='sudo dscacheutil -flushcache'
+. .alias
