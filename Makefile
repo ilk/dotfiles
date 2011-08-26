@@ -22,8 +22,10 @@ colors:
 aliases:
 	rm -f ~/.osx_alias
 	rm -f ~/.deb_alias
+	rm -f ~/.alias
 	cp -rp .osx_alias ~/
 	cp -rp .deb_alias ~/
+	cp -rp .alias ~/
 
 profile:
 	rm -f ~/.profile
