@@ -35,13 +35,13 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # colors
-. .colors 
+. ~/.colors 
 
 # aliases
 if [ "`uname -s`" == "Darwin" ]; then
-	. .osx_alias
+	. ~/.osx_alias
 else
-	. .deb_alias
+	. ~/.deb_alias
 fi
 
 PATH=./.bin:$PATH
