@@ -44,6 +44,6 @@ else
 	. ~/.deb_alias
 fi
 
-PATH=./.bin:$PATH
+PATH=./.bin:/usr/local/sbin:$PATH
 export EDITOR=vim
 . ~/.bashrc.extra
