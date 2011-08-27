@@ -13,7 +13,9 @@ ssh:
 
 bashrc:
 	rm -f ~/.bashrc
+	rm -f ~/.bashrc.extra
 	cp -rp .bashrc ~/
+	cp -rp .bashrc.extra ~/
 
 colors:
 	rm -f ~/.colors

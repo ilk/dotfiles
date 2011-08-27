@@ -46,3 +46,4 @@ fi
 
 PATH=./.bin:$PATH
 export EDITOR=vim
+. ~/.bashrc.extra
