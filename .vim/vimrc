@@ -24,7 +24,7 @@ filetype plugin indent on
 
 "Colorscheme
 syntax on
-colorscheme greyblack
+colorscheme seablack
 
 "Mappings
 let mapleader = ","
