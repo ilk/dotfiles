@@ -34,3 +34,6 @@ map <leader>v :w\|!vows --spec %<CR>
 map <leader>b :w\|!sh %<CR>
 vmap c :CoffeeCompile<CR>
 
+"NERDTree Mappings
+map <leader>t :NERDTreeToggle<CR>
+
